@@ -1,0 +1,14 @@
+Changes
+MANIFEST
+Makefile.PL
+README
+lib/Text/Shorten.pm
+t/00-load.t
+t/shorten-number.t
+t/shorten_array.t
+t/shorten_hash.t
+t/manifest.t
+t/pod-coverage.t
+t/pod.t
+t/boilerplate.t
+META.yml                                 Module meta-data (added by MakeMaker)
