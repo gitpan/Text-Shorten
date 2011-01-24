@@ -4,7 +4,7 @@ Text::Shorten - Abbreviate long output
 
 =head1 VERSION
 
-0.01
+0.02
 
 =head1 SYNOPSIS
 
@@ -35,7 +35,7 @@ our @ISA = qw(Exporter);
 our @EXPORT = qw();
 our @EXPORT_OK = qw(shorten_scalar shorten_array shorten_hash);
 our %EXPORT_TAGS = (all => [ @EXPORT_OK ]);
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 our $DOTDOTDOT = '...';
 our $DOTDOTDOT_LENGTH = length($DOTDOTDOT);
@@ -259,7 +259,8 @@ sub shorten_array {
 
 
     my $excl = ($i>0 && !$inc[$i-1]) + ($i<$n-1 && !$inc[$i+1]) + 0;
-    my $dlen = length($array->[$i] // '') + $seplen + $dotslen * ($excl - 1);
+    my $dlen = defined($array->[$i])&&length($array->[$i])
+      + $seplen + $dotslen * ($excl - 1);
     if ($prio[$i] >= 8 || $len + $dlen <= $maxlen) {
       $inc[$i] = 1;
       $len += $dlen;

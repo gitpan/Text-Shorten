@@ -1,5 +1,8 @@
 Revision history for Text-Shorten
 
+0.02    2011-01-23
+        Make compatible with Perl <5.10.
+
 0.01    2011-01-18
         First version, released on an unsuspecting world.
 
