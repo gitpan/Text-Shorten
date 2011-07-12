@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Text-Shorten
-version:            0.03
+version:            0.04
 abstract:           Abbreviate long output
 author:
     - Marty O'Brien <mob@cpan.org>

@@ -29,5 +29,3 @@ $r = join ',', @r;
 $r = '' if not defined $r;
 print length($r), ":$r\n";
 ok(length($r) <= 20);
-				 
-

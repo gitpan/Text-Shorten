@@ -1,5 +1,8 @@
 Revision history for Text-Shorten
 
+0.04    2011-07-08
+	Bug fix in abbreviation routine for long hashes.
+
 0.03    2011-02-16
         Efficiency improvements for arrays and hashes with thousands
 	of elements.
