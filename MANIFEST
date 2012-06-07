@@ -7,6 +7,7 @@ t/00-load.t
 t/shorten-number.t
 t/shorten_array.t
 t/shorten_hash.t
+t/RT77673.t
 t/manifest.t
 t/pod-coverage.t
 t/pod.t

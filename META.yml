@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Text-Shorten
-version:            0.04
+version:            0.05
 abstract:           Abbreviate long output
 author:
     - Marty O'Brien <mob@cpan.org>
@@ -11,12 +11,13 @@ configure_requires:
 build_requires:
     ExtUtils::MakeMaker:  0
 requires:
-    Test::More:  0
+    Hash::SafeKeys:  0
+    Test::More:      0
 no_index:
     directory:
         - t
         - inc
-generated_by:       ExtUtils::MakeMaker version 6.57_05
+generated_by:       ExtUtils::MakeMaker version 6.55_02
 meta-spec:
     url:      http://module-build.sourceforge.net/META-spec-v1.4.html
     version:  1.4
